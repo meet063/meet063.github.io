@@ -1,41 +1,160 @@
-*, 
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
+
+/* General page styling */
 body {
-    background-color:#aad4cf;
-}
-.wrapper {
-    background-color:#caf5f0;
-    width: 600px;
-    margin: 0 auto;  /* centers block level element */ 
+  font-family: Arial, sans-serif;
+  background-color: #a3cfcf;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul {
-    text-align: center;
-    padding-left: 0;
-    
-}
-nav ul li {
-    display: inline-block;
-    width: 100px;
-    border-right: 1px solid black;
-    font-size: xx-large;
-}
-nav ul li:last-child {
-    border-right: none;
+header {
+  text-align: center;  /* Centers all text and images inside the header */
+  padding-bottom: 0;
+  margin: 0;
 }
 
-nav ul li:first-child {
-    text-align: left;
-    padding-left: 10px;
-    
+.image {
+  position: relative; /* Allows absolutely positioned elements (like title) inside it */
 }
 
-nav ul li:nth-last-child {
-    text-align: right;
-    padding-right: 50px;
+.img {
+  width: 50%;
+  height: auto;
+  display: block; /* Removes inline spacing below the image */
+  place-items: center;
+}
+
+.site-title {
+  position: absolute; /* Places title over the image */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfectly centers text */
+  color: rgb(234, 229, 229); /* Light text color for contrast on banner */
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+nav {
+  margin-top: -4px; /* Slight upward adjustment to remove gap below banner */
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;  /* Places links side by side */
+  justify-content: center; /* Centers links horizontally */
+  align-items: center; /* Vertically aligns items */
+  gap: 100px;
+  font-size: 25px;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center; /* Ensures icon/text alignment if used */
+}
+
+.nav-links a {
+  text-decoration: none; /* Removes underline from links */
+  font-weight: bold;
+  color: rgb(15, 1, 1);
+}
+
+.divider {
+  font-weight: bold; 
+  color: #555; /* Used as a visual separator (like “|” between links) */
+}
+
+
+main {
+  max-width: 1000px;  /* Limits text line length for readability */
+  margin: 20px auto;   /* Centers main content horizontally */
+  background-color: rgb(181, 228, 228);   /* change box background color */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.content-box {
+  background-color: #a3cfcf;
+  padding: 25px;
+  border: 1px solid #110101; /* Simple border around the box */
+  border-radius: 10px; 
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.starfish-img {
+  float: left; /* Positions image to the left of the text */
+  margin-right: 15px;
+  width: 150px;
+  height: auto;
+  border-radius: 5px; /* Slightly rounds image corners */
+}
+
+.story::after {
+  content: "";
+  display: block;
+  clear: both; /* Ensures layout doesn’t break after floated elements */
+}
+
+
+.facts ul {
+  padding-left: 20px; /* Adds space before list items */
+}
+
+form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;    /* Fields take full container width */
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #130202;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Adds spacing between inputs */
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: transparent; /* Matches background design */
+  color: black;
+  border: 1px solid #100101;
+  border-radius: 4px;
+  cursor: pointer;   /* Changes cursor on hover */
+}
+
+
+.radio-group {
+  margin-top: 10px;
+}
+
+.radio-group p {
+  margin: 0 0 10px;
+  font-weight: bold;  /* Emphasizes the label */
+}
+
+.radio-group label {
+  display: inline-flex;  /* Aligns radio input and text neatly */
+  align-items: center;
+  gap: 6px;
+  margin-right: 30px; /* Space between options */
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #aad4cf; /* Slightly different shade for contrast */
+  margin-top: 20px;
 }
 
 
