@@ -19,13 +19,14 @@ header {
   position: relative; /* Allows absolutely positioned elements (like title) inside it */
 }
 
-.img {
-  width: 50%;
-  height: auto;
-  display: block; /* Removes inline spacing below the image */
-  place-items: center;
-}
 
+.image {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; /* matches your main width */
+  margin: 0 auto;
+  overflow: hidden;
+}
 .site-title {
   position: absolute; /* Places title over the image */
   top: 50%;
