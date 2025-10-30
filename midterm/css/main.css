@@ -3,10 +3,11 @@
 /* General page styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #a3cfcf;
+  background-color:  #caf5f0;
   margin: 0;
   padding: 0;
 }
+
 
 header {
   text-align: center;  /* Centers all text and images inside the header */
@@ -30,7 +31,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Perfectly centers text */
-  color: rgb(234, 229, 229); /* Light text color for contrast on banner */
+  color:  white; /* Light text color for contrast on banner */
   font-size: 50px;
   font-weight: bold;
 }
@@ -72,7 +73,7 @@ nav {
 main {
   max-width: 1000px;  /* Limits text line length for readability */
   margin: 20px auto;   /* Centers main content horizontally */
-  background-color: rgb(181, 228, 228);   /* change box background color */
+  background-color:  #aad4cf;   /* change box background color */
   padding: 20px;
   border-radius: 8px;
 }
@@ -155,6 +156,18 @@ footer {
   padding: 10px;
   background-color: #aad4cf; /* Slightly different shade for contrast */
   margin-top: 20px;
+}
+
+.wrapper {
+    background-color:  #aad4cf;
+    width: 600px;
+    margin: 0 auto;  /* centers block level element */ 
+}
+
+@media screen and (min-width: 1000px) {
+    .wrapper{
+        width: 1000px;
+    }
 }
 
 
